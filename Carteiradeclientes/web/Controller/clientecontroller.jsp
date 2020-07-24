@@ -1,4 +1,4 @@
-<%@ page import="Carteira.Cliente"%>
+<%@ page import="Model.Cliente"%>
 <%      
     //Instanciando a Classe Importada
     Cliente c = new Cliente();

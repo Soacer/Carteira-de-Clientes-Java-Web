@@ -3,17 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Carteira;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
+package Model;
         
 /**
  *
  * @author Alisson Soares
  */
 public class Cliente {
-    private static Date data = new Date();
     private String nome;
     private String email;
      /**
@@ -42,16 +38,6 @@ public class Cliente {
      */
     public void setEmail(String email) {
         this.email = email;
-    }
-    
-    public static String dataAtual(){
-        SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
-        return formatador.format(data);
-    }
-    
-    public static String horaAtual(){
-        SimpleDateFormat formatador = new SimpleDateFormat("HH:mm:ss");
-        return formatador.format(data);
     }
     
 }
