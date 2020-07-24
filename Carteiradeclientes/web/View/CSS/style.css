@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23/07/2020, 11:47:31
+    Author     : Alisson Soares
+*/
+
+/*Edição dos Componentes HTML*/
+body{
+    background-color: #FFFFFF;
+}
+h2{ 
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+} 
+h3{ 
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px;
+}
+
+/*Espaçamentos e Componentes Criados por Mim*/
+.espaco_vertical{
+    padding-top: 25px;
+}
+.espaco_vertical2{
+    padding-bottom: 50px;
+}
+.espaco_horizontal{
+    padding-left: 50px;    
+}
+.espaco_horizontal2{
+    padding-right: 50px;
+}
+
+/*Edições Pequenas*/
+#espacamento_dir{
+    padding-right: 5px;
+}
+#cor_letra{
+    color: #FAFAFA;
+}
+#rodape{
+    background-color: #424242;  
+}
+#imagem2{
+    width: 400px;
+}
+#imagem3{
+    width: 375px;
+}
+#imagem4{
+    width: 390px;
+}
+#correcoes_card{
+    width: 700px;
+    height: 330px;
+}
