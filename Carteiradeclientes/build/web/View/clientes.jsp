@@ -1,4 +1,4 @@
-<%-- 
+ q q<%-- 
     Document   : clientes
     Created on : 25/07/2020, 17:32:06
     Author     : Alisson Soares
@@ -109,7 +109,7 @@
                                 out.print(" </thead>");
                                 out.print(" <tbody>");
                                 ClienteDao c2 = new ClienteDao();
-                                if(request.getParameter("nome").equals("") || request.getParameter("email").equals("")){
+                                if(request.getParameter("nome") == null || request.getParameter("email") == null){
                                     ArrayList<Cliente> lista = c2.retrieve_all();
                                     for(int num = 0; num < lista.size(); num++){
                                         out.print("     <tr>");
@@ -120,7 +120,7 @@
                                         out.print("         <td><a href='../Controller/delete.jsp?id="+lista.get(num).getId()+"'><button type='submit' class='btn btn-danger'><i class='fa fa-trash'></i>  Excluir</button></a></td>");
                                         out.print("     </tr>");
                                     }
-                                }else if(request.getParameter("nome") == "" && request.getParameter("email") != ""){
+                                }else if(request.getParameter("nome") == null && request.getParameter("email") != null){
                                     ArrayList<Cliente> lista = c2.retrieve_email(request.getParameter("email"));
                                     for(int num = 0; num < lista.size(); num++){
                                         out.print("     <tr>");

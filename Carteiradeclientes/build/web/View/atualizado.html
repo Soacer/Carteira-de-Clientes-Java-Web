@@ -1,15 +1,9 @@
-<%-- 
-    Document   : atualizar
-    Created on : 25/07/2020, 18:32:22
-    Author     : Alisson Soares
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="Dao.ClienteDao"%>
-<%@page import="Model.Cliente"%>
-<%@page import="java.util.ArrayList" %>
-
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
         <title>Carteira de Clientes</title>
@@ -61,41 +55,27 @@
             <div class="espaco_vertical2">
                 <div class="espaco_horizontal">
                     <div class="espaco_horizontal2">
-                        <div class="card text-white bg-secondary mb-3">
-                            <div class="card-body">
-                                <center>
-                                    <h2>Consulta de Clientes</h2>
-                                </center>
-                                <form method="get" action="../Controller/update.jsp" enctype="multipart/form-data">
-                                    <input type="hidden" name="id2" value="<%=request.getParameter("id")%>">
-                                    <div class="form-group">
-                                        <div class="espaco_horizontal">
-                                            <div class="espaco_horizontal2">
-                                                <input type="text" name="nome2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="<%=request.getParameter("nome")%>">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="espaco_horizontal">
-                                            <div class="espaco_horizontal2">
-                                                <input type="email" name="email2" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="<%=request.getParameter("email")%>">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="espaco_vertical2">
-                                        <div class="espaco_horizontal">
-                                            <div class="espaco_horizontal2">
-                                                <button type="submit" class="btn btn-success"><i class="fa fa-check"></i>  Editar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                        <center>
+                            <div class="card border-success mb-3">
+                                <div class="card-header text-success">Cliente Atualizado com Sucesso!</div>
+                                <div class="card-body text-success">
+                                  <h5 class="card-title">Se deseja atualizar um novo cliente clique abaixo</h5>
+                                    <a href="clientes.jsp"><button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-folder"></i>  Lista de Clientes</button></a>
+                                </div>
                             </div>
-                        </div>
+                        </center>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <div class="card" style="height: 220px;">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+        </div>
+        
         <div id="rodape">
             <footer class="container py-5">
                 <div class="row">

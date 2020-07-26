@@ -11,13 +11,14 @@
     try{
         Cliente c1 = new Cliente();
         ClienteDao c2 = new ClienteDao();
-        if(request.getParameter("nome").equals("") || request.getParameter("email").equals("")){ //Caso os campos nome e email estejam vazios...
-            response.sendRedirect("../View/cadastrar.html"); // ...Redireciona para a Index
+        if(request.getParameter("nome2") == "" || request.getParameter("email2") == ""){ //Caso os campos nome e email estejam vazios...
+            response.sendRedirect("../View/clientes.jsp?"); // ...Redireciona para a tabela de clientes
         }else{
-            c1.setNome(request.getParameter("nome"));
-            c1.setEmail(request.getParameter("email"));
+            c1.setId(Integer.parseInt(request.getParameter("id2")));
+            c1.setNome(request.getParameter("nome2"));
+            c1.setEmail(request.getParameter("email2"));
             c2.update(c1);
-            
+            response.sendRedirect("../View/atualizado.html");
         }
     }catch(Exception erro){
         throw new RuntimeException("Erro 7 Controller(Update): " +erro);

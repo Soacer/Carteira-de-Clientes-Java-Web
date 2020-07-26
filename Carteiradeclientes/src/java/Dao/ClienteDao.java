@@ -7,6 +7,7 @@ import java.sql.PreparedStatement; //Biblioteca feita para evitar o SQL injectio
 import java.sql.Statement; //Statement é o responsável por executar os teus códigos sql no banco de dados
 import java.sql.ResultSet; //Resultset é uma classe da API JAVA que permite percorrermos um DataTable de alguma consulta em um banco de dados
 import java.util.ArrayList; //Biblioteca que cria uma array com o resultado do BD 
+import java.util.Optional;
 
 /**
  *
@@ -44,11 +45,13 @@ public class ClienteDao {
         try{
             st = conexao.createStatement();
             result = st.executeQuery(sql);
+            //System.out.println(result);
             while(result.next()){ //Laço de Repetição que visita todos os espaços da Array de retorno (Select)
                 Cliente cliente = new Cliente();
                 cliente.setId(result.getInt("id"));
                 cliente.setNome(result.getString("nome"));
                 cliente.setEmail(result.getString("email"));
+                System.out.println(cliente);
                 lista.add(cliente);
             }
         }catch(Exception erro){

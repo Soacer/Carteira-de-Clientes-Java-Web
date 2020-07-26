@@ -12,6 +12,7 @@
     try{
         ClienteDao c2 = new ClienteDao();
         c2.Delete(Integer.parseInt(request.getParameter("id"))); //Integer.parseInt: Converte a String recebida em um número
+        response.sendRedirect("../View/clientes.jsp");
     }catch(Exception erro){
         throw new RuntimeException("Erro 8 Controller(Delete): " +erro);
     }

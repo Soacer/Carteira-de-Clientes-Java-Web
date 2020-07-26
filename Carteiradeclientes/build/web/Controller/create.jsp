@@ -10,8 +10,8 @@
     try{
         Cliente c1 = new Cliente();
         ClienteDao c2 = new ClienteDao();
-        if(request.getParameter("nome").equals("") || request.getParameter("email").equals("")){ //Caso os campos nome e email estejam vazios...
-            response.sendRedirect("../View/cadastrar.html"); // ...Redireciona para a Index
+        if(request.getParameter("nome") == "" || request.getParameter("email") == ""){ //Caso os campos nome e email estejam vazios...
+            response.sendRedirect("../View/cadastrar.html"); // ...Redireciona para a tela de cadastro
         }else{
             c1.setNome(request.getParameter("nome"));
             c1.setEmail(request.getParameter("email"));
