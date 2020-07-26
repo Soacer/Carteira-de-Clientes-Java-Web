@@ -1,14 +1,13 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 23/07/2020, 11:47:31
     Author     : Alisson Soares
 */
 
 /*Edição dos Componentes HTML*/
+html {
+    position: relative;
+    min-height: 100%;
+}
 body{
     background-color: #FFFFFF;
 }
@@ -28,6 +27,11 @@ h3{
     font-weight: 700; 
     line-height: 15.4px;
 }
+footer{
+    display: grid;
+    margin-bottom: 0%;
+    background-color: #424242;
+}
 
 /*Espaçamentos e Componentes Criados por Mim*/
 .espaco_vertical{
@@ -42,6 +46,16 @@ h3{
 .espaco_horizontal2{
     padding-right: 50px;
 }
+.container2{
+    display: grid;
+    grid-template-rows: 15% 500px 15%;
+    grid-template-columns: 500px 30%px;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    border: #FFFFFF;
+}
 
 /*Edições Pequenas*/
 #espacamento_dir{
@@ -51,7 +65,7 @@ h3{
     color: #FAFAFA;
 }
 #rodape{
-    background-color: #424242;  
+    background-color: #424242; 
 }
 #imagem2{
     width: 400px;

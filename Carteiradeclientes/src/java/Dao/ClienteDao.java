@@ -58,7 +58,7 @@ public class ClienteDao {
     }
     
     public ArrayList<Cliente> retrieve_nome(String nome){ //Select pelo Nome
-        String sql = "SELECT * FROM clientes WHERE nome = '%"+nome+"%'";
+        String sql = "SELECT * FROM clientes WHERE nome LIKE '"+nome+"'";
         try{
             st = conexao.createStatement();
             result = st.executeQuery(sql);
@@ -76,7 +76,7 @@ public class ClienteDao {
     }
     
     public ArrayList<Cliente> retrieve_email(String email){ //Select pelo Email
-        String sql = "SELECT * FROM clientes WHERE nome = '%"+email+"%'";
+        String sql = "SELECT * FROM clientes WHERE nome LIKE '"+email+"'";
         try{
             st = conexao.createStatement();
             result = st.executeQuery(sql);

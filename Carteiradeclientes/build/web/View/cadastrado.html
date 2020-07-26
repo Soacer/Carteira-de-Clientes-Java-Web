@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Carteira de Clientes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">Carteira de Clientes</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="../index.html"><i class="fa fa-home" style="font-size:24px"></i><span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="clientes.jsp">
+                            Clientes
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          A Empresa
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          Contatos
+                        </a>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0" id="espacamento_dir">
+                      <input class="form-control mr-sm-2" type="search" placeholder="..." aria-label="Search">
+                      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i>  Pesquisar Cliente</button>
+                    </form>
+                    <a href="cadastrar.html"><button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-edit"></i>  Cadastrar Cliente</button></a>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="espaco_vertical">
+            <div class="espaco_vertical2">
+                <div class="espaco_horizontal">
+                    <div class="espaco_horizontal2">
+                        <center>
+                            <div class="card border-success mb-3">
+                                <div class="card-header text-success">Cliente Cadastrado com Sucesso!</div>
+                                <div class="card-body text-success">
+                                  <h5 class="card-title">Se deseja cadastrar um novo cliente clique abaixo</h5>
+                                    <a href="cadastrar.html"><button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-edit"></i>  Cadastrar Cliente</button></a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="height: 220px;">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"></p>
+            </div>
+        </div>
+        
+        <div id="rodape">
+            <footer class="container py-5">
+                <div class="row">
+                    <h3 id="cor_letra">Projeto Desenvolvido por: <i class="fa fa-copyright"></i>  Alisson de Carvalho Soares</h3>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

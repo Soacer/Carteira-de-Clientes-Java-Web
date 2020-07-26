@@ -12,7 +12,7 @@ public class ConnectionFactory {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             return DriverManager.getConnection(
-                    "jdbc:mysql://localhost/carteira","root"," "
+                    "jdbc:mysql://localhost/carteira","root",""
             );//Caminho do Banco/Nome do Banco, Usuário do Banco, Senha
         }catch(Exception erro){
             throw new RuntimeException("Erro 1: " +erro);
